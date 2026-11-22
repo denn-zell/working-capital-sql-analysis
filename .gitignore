@@ -1,0 +1,6 @@
+# Raw SEC data (too large for GitHub, downloaded separately)
+data/raw/
+
+# DuckDB database files
+*.duckdb
+*.duckdb.wal
