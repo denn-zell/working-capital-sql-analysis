@@ -10,7 +10,7 @@ FROM read_csv(
     'data/raw/*/sub.txt',
     delim = '\t',
     header = true,
-    quote = '',  -- some company names contain quotation marks
+    quote = '"',  -- values containing tabs or quotes are wrapped in double quotes
     all_varchar = true,
     union_by_name = true,
     filename = true
@@ -22,7 +22,7 @@ FROM read_csv(
     'data/raw/*/num.txt',
     delim = '\t',
     header = true,
-    quote = '',
+    quote = '"',
     all_varchar = true,
     union_by_name = true,
     filename = true
